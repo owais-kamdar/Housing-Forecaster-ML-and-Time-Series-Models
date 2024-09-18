@@ -36,10 +36,11 @@ pip install -r requirements.txt
    pip install -r requirements.txt
    ```
 
-4. Run the Python script:
+4. Run the Jupyter Notebook:
 
    ```bash
-   python main.py
+   jupyter notebook
+
 
    ```
 
