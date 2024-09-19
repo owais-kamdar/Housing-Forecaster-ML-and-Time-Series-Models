@@ -7,6 +7,17 @@ This project utilizes time series analysis and machine learning models to predic
 - **Models:** SARIMA, ARIMA, Random Forest, Ridge Regression, Polynomial Regression.
 - **Evaluation:** Comparison of model performances using metrics like MAE and RMSE, and visualization of actual vs predicted values.
 
+## Project Structure
+- **data/:** Directory containing multiple CSV files with housing market and real estate data.
+- **load_data.py:** Script responsible for loading, reshaping, and combining datasets.
+- **model.py:** Contains machine learning models for prediction and their evaluation.
+- **timeseries_model.py:** Implements time series models (SARIMA and ARIMA) for forecasting.
+- **visualize.py:** Contains functions for visualizing model results, including real vs predicted - values and model comparisons.
+- **main.py:** Main script to execute machine learning model training and predictions.
+- **timeseries_main.py:** Main script to execute time series model predictions.
+- **requirements.txt:** File containing the list of dependencies for the project.
+
+
 ## Setup and Installation
 
 ### Requirements
@@ -36,16 +47,27 @@ pip install -r requirements.txt
    pip install -r requirements.txt
    ```
 
-4. Run the Jupyter Notebook:
+4. Run the machine learning models by executing the main.py script:
 
    ```bash
-   jupyter notebook
+   python main.py
 
 
    ```
 
+5. Run the time series models by executing the timeseries_main.py script:
+
+   ```bash
+   python timeseries_main.py
+   ```
+   
+
 ## Results
 The project compares various models for predicting housing and rent prices. Graphical comparisons of real vs predicted values are provided for model evaluation.
+
+Example Visualizations:
+Real vs Predicted values for different models.
+Model performance comparisons (e.g., MAE, RMSE).
 
 
 ## License
